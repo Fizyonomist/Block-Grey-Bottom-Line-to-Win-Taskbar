@@ -1,5 +1,9 @@
 # Block Grey Bottom Line to Win Taskbar
 
+<p align="center">
+  <img src="example.jpg" alt="Block Grey Line Preview" width="700">
+</p>
+
 ### The only modern solution for Windows 11's most annoying visual glitch.
 
 If you are a Windows 11 user who loves a clean desktop, you probably use the **"Automatically hide the taskbar"** setting. However, Microsoft leaves a persistent, **2-pixel grey line** (the Presence Indicator) at the bottom of the screen. 
