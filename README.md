@@ -1,46 +1,49 @@
-# Block-Grey-Bottom-Line-to-Win-Taskbar
-Eliminate the annoying 2px grey line on Windows 11 hidden taskbars. Specially designed for OLED users to prevent visual distraction. This smart tool masks the line when windows are maximized, but auto-hides during fullscreen games or videos (YouTube/Netflix). Lightweight, click-through, and zero-interference. Clear your view!
+# Block Grey Bottom Line to Win Taskbar
 
-The only modern solution for Windows 11's most annoying visual glitch.
-If you are a Windows 11 user who loves a clean desktop, you probably use the "Automatically hide the taskbar" setting. However, Microsoft leaves a persistent, 2-pixel grey line (the Presence Indicator) at the bottom of the screen.
+### The only modern solution for Windows 11's most annoying visual glitch.
 
-As of 2026, there is still no official way to remove this. Popular tools like TranslucentTB or registry hacks either fail to hide it or cause system flickering. This tool is specifically designed to fill that gap.
+If you are a Windows 11 user who loves a clean desktop, you probably use the **"Automatically hide the taskbar"** setting. However, Microsoft leaves a persistent, **2-pixel grey line** (the Presence Indicator) at the bottom of the screen. 
 
-🌟 Why This Tool?
-Perfect for OLED Displays
-Static elements are the enemy of OLED panels. That 2px grey line isn't just annoying; it’s a constant static element that breaks pixel uniformity. This tool acts as a smart digital mask, ensuring your OLED pixels stay safe and your blacks stay deep.
+As of **2026**, there is still no official way to remove this. Popular tools like TranslucentTB or registry hacks either fail to hide it or cause system flickering. This tool is specifically designed to fill that gap.
 
-Intelligent Logic (Context-Aware)
+---
+
+## 🌟 Why This Tool?
+
+### **Perfect for OLED Displays**
+Static elements are the enemy of OLED panels. That 2px grey line isn't just annoying; it’s a constant static element that breaks pixel uniformity. This tool acts as a **smart digital mask**, ensuring your OLED pixels stay safe and your blacks stay deep.
+
+### **Intelligent Logic (Context-Aware)**
 This isn't just a static overlay. It knows what you are doing:
+* **Desktop Mode:** Stays hidden to keep your wallpaper pristine.
+* **Maximize Mode:** Automatically activates the 2px black mask when you maximize an app (Chrome, Office, Explorer).
+* **Cinema & Gaming Mode:** It **detects True Fullscreen** (YouTube, Netflix, AAA Games) and disables itself instantly so you get 100% original content without any overlays.
 
-Desktop Mode: Stays hidden to keep your wallpaper pristine.
+---
 
-Maximize Mode: Automatically activates the 2px black mask when you maximize an app (Chrome, Office, Explorer).
+## 🚀 Key Features
+* **Zero Resource Impact:** Extremely lightweight (less than 5MB RAM).
+* **Click-Through:** It uses the `+E0x20` flag, so it’s invisible to your mouse. You can click "through" it to trigger the taskbar easily.
+* **No Install Required:** Just run the `.exe` and enjoy a clean view.
+* **Anti-Flicker:** Built with optimized scanning to prevent window flickering.
 
-Cinema & Gaming Mode: It detects True Fullscreen (YouTube, Netflix, AAA Games) and disables itself instantly so you get 100% original content without any overlays.
+---
 
-🚀 Key Features
-Zero Resource Impact: Extremely lightweight (less than 5MB RAM).
+## 🛠 Installation & Auto-Startup
 
-Click-Through: It uses the +E0x20 flag, so it’s invisible to your mouse. You can click "through" it to trigger the taskbar easily.
+To ensure the script starts automatically every time you turn on your computer, follow these simple steps:
 
-No Install Required: Just run the .exe and enjoy a clean view.
+1.  **Download:** Get the `BlockGreyLine.exe` from this repository.
+2.  **Open Startup Folder:** Press `Win + R` on your keyboard, type `shell:startup`, and hit **Enter**.
+3.  **Create a Shortcut:** Right-click on your `BlockGreyLine.exe` and select "Copy". Then, right-click inside the Startup folder and select **"Paste shortcut"**.
+4.  **All Set:** Windows will now automatically launch the tool in the background every time you log in.
 
-Anti-Flicker: Built with optimized scanning to prevent window flickering.
+---
 
-🛠 Installation
-Download the BlockGreyLine.exe from the Releases section.
+## 💻 Source Code (AutoHotkey)
+If you prefer to run it via **AutoHotkey v1.1+**, you can use the source code provided in the `BlockGreyLine.ahk` file or copy it below:
 
-Press Win + R, type shell:startup, and hit Enter.
-
-Copy the .exe file into that folder.
-
-It will now start automatically every time you turn on your PC.
-
-
-If you want to run it via AutoHotkey v1.1+, here is the source code:
-
-AutoHotkey
+```autohotkey
 #Persistent
 #NoEnv
 #NoTrayIcon
@@ -82,3 +85,5 @@ if (MaskNeeded) {
     Gui, Hide
 }
 return
+📝 License
+This project is licensed under the MIT License. Feel free to use, modify, and share!
