@@ -37,15 +37,20 @@ This isn't just a static overlay. It knows what you are doing:
 
 To ensure the script starts automatically every time you turn on your computer, follow these simple steps:
 
-1.  **Download:** Get the `BlockGreyLine.exe` from this repository.
+1.  **Download:** Get the `Block-Grey-Bottom-Line-to-Win-Taskbar.exe` from this repository.
 2.  **Open Startup Folder:** Press `Win + R` on your keyboard, type `shell:startup`, and hit **Enter**.
-3.  **Create a Shortcut:** Right-click on your `BlockGreyLine.exe` and select "Copy". Then, right-click inside the Startup folder and select **"Paste shortcut"**.
+3.  **Create a Shortcut:** Right-click on your `Block-Grey-Bottom-Line-to-Win-Taskbar.exe` and select "Copy". Then, right-click inside the Startup folder and select **"Paste shortcut"**.
 4.  **All Set:** Windows will now automatically launch the tool in the background every time you log in.
 
 ---
 
+## 📝 License
+This project is licensed under the MIT License. Feel free to use, modify, and share!
+
+---
+
 ## 💻 Source Code (AutoHotkey)
-If you prefer to run it via **AutoHotkey v1.1+**, you can use the source code provided in the `BlockGreyLine.ahk` file or copy it below:
+If you prefer to run it via **AutoHotkey v1.1+**, you can use the source code provided in the `Block-Grey-Bottom-Line-to-Win-Taskbar.ahk` file or copy it below:
 
 ```autohotkey
 #Persistent
@@ -89,5 +94,4 @@ if (MaskNeeded) {
     Gui, Hide
 }
 return
-📝 License
-This project is licensed under the MIT License. Feel free to use, modify, and share!
+
